@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto+Mono&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+    --primary-colour: #fff;
+}
+
+html{
+    background-color: #27374D;
+}
+
+.Logo{
+    position: fixed;
+    z-index: 100;
+    height: 12%;
+    margin-top: 12px;
+    margin-left: 180px;
+}
+
+header{
+    position: fixed;
+    right: 70px;
+    z-index: 100;
+}
+
+.borderBtn:hover{
+    color: #fff;
+    border: 0.2rem solid #FF12BD;
+}
+
+.NavBar{
+    display: flex;
+    gap: 30px;
+    color: var(--primary-colour);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+a:hover{
+    color: #43F675;
+}
+
+.nav{
+    margin-top: 13px;
+}
+
+.borderBtn{
+    border: 0.2rem solid #43F675;
+    padding: 10px 30px;
+}
+
+main{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.intro{
+    color: var(--primary-colour);
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 18%;
+    top: 20%;
+}
+
+#profileName{
+    color: #43F675;
+    text-shadow: 2px 2px 1px #FF12BD;
+}
+
+.keyword{
+    color: #43F675;
+}
+
+.spacing{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-family: 'Space Mono', monospace;
+    font-size: 150%;
+}
+
+/* Animation */
+
+#typewriter{
+    overflow: hidden;
+    border-right: .15em solid #FF12BD;
+    margin: auto;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
