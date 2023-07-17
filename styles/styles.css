@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto+Mono&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+    --primary-colour: #fff;
+}
+
+html{
+    background-color: #27374D;
+}
+
+.Logo{
+    position: fixed;
+    z-index: 100;
+    height: 12%;
+    margin-top: 12px;
+    margin-left: 10%;
+}
+
+/* .vl1{
+    border-left: 5px solid #9DB2BF;
+    height: 65%;
+    margin-left: 8%;
+}
+
+.vl2{
+    border-left: 5px solid #fff;
+    margin-left: 8%;
+    height: 15%;
+} */
+
+header{
+    position: fixed;
+    right: 70px;
+    z-index: 100;
+}
+
+.borderBtn:hover{
+    color: #fff;
+    border: 0.2rem solid #FF12BD;
+}
+
+.NavBar{
+    display: flex;
+    gap: 30px;
+    color: var(--primary-colour);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+a:hover{
+    color: #43F675;
+}
+
+.nav{
+    margin-top: 13px;
+}
+
+.borderBtn{
+    border: 0.2rem solid #43F675;
+    padding: 10px 30px;
+}
+
+main{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.intro{
+    color: var(--primary-colour);
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 18%;
+    top: 20%;
+}
+
+#profileName{
+    color: #43F675;
+    text-shadow: 2px 2px 1px #FF12BD;
+    display: inline-block;
+}
+
+.keyword{
+    color: #43F675;
+}
+
+.spacing{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-family: 'Space Mono', monospace;
+    font-size: 150%;
+}
+
+.contactBtn{
+    font-size: 1rem;
+}
+
+.Updated{
+    color: var(--primary-colour);
+    z-index: 100;
+    position: fixed;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.7rem;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* Animation */
+
+.typewriter #profileName{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: FF12BD; }
+  }
+
+  /* Media Resizing*/
+  @media screen {
+    
+  }
